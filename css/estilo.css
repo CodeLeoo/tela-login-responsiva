@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+:root {
+    --cordegadretop: #710080;
+    --cordegrademeio: #f00094;
+    --cordegradebottom: rgb(223, 41, 41);
+    --corletras: rgb(92, 1, 92);
+    --corbotao: rgb(158, 61, 118);
+}
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*celular*/
+@media (min-width: 320px) {
+    
+    body, html {
+        height: 100vh;
+        width: 100vw;
+        background-image: linear-gradient(to bottom, #710080, #f00094, rgb(223, 41, 41));
+        position: relative;
+    }
+    #container {
+        position: absolute;
+        height: 75vh;
+        width: 75vw;
+        box-shadow: 1px 1px 4px rgba(58, 0, 58, 0.726);
+        transform: translate(16%, 12%);
+    }
+    /*imagem do login*/
+    #img {
+        background-image: url("../imagens/water-g14e7cb263_1280.jpg");
+        height: 30vh;
+        width: 75vw;
+        border-top-right-radius: 9px;
+        border-top-left-radius: 9px;
+    }
+    /*sectin do login*/
+    #textos {
+        padding-top: 19px;
+    }
+    #login {
+        background-color: white;
+        height: 50vh;
+        width: 75vw;
+        border-bottom-right-radius: 9px;
+        border-bottom-left-radius: 9px;
+    }
+    #textos > h1 {
+        font-size: 29px;
+        padding: 9px;
+        text-align: center;
+    }
+    #textos > p {
+        padding: 0px 9px 0px 9px;
+        line-height: 1.3em;
+        text-align: center;
+        font-size: 19px;
+    }
+    /*campos de login*/
+    #usu {
+        text-align: center;
+        padding-top: 19px;
+        
+    }
+    #senh {
+        text-align: center;
+        padding-top: 9px;
+    }
+    #logar {
+        text-align: center;
+        padding-top: 9px;
+    }
+    #enviar {
+        background-color: #f00094;
+        width: 59px;
+        height: 29px;
+        border-radius: 9px;
+    }
+}
