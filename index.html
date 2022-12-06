@@ -6,34 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="css/estilo.css" media="all">
-    <link rel="stylesheet" href="css/media-querie.css">
+    <link rel="stylesheet" href="css/media-querie.css" media="all">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="imagens/Hopstarter-Superhero-Avatar-Avengers-Iron-Man.ico" type="image/x-icon">
 </head>
 <body>
+    <!--container-->
     <section id="container">
         <section id="img">
             
         </section>
+        <!-- section dos campo de login todo-->
         <section id="login">
+
+            <!-- section dos titulo e paragrafo no top formulario-->
             <section id="textos">
                 <h1>Login</h1>
                 <p>seja bem vindo (A), faça login na sua conta para poder configurar seu ambiente.</p>
             </section>
-
+                <!--campo do usuario-->
             <div class="fundoform">
-                <form id="formu" action="formulario.php" method="post">
-                    <p id="usu"> <label for="usuario">Login:</label> <input id="usuario" type="text" required minlength="5" maxlength="21" placeholder="Nome de Usuario" size="19"></p>
+                    <form id="formu" action="formulario.php" method="post">
+                        <p id="usu"> <label for="usuario">Login:</label> <input id="usuario" type="text" required minlength="5" maxlength="21" placeholder="Nome de Usuario" size="19"></p>
             </div>
-
-                <div class="fundoform">
-                    <p id="senh"><label for="senha">Senha:</label> <input id="senha" type="password" required placeholder="senha" minlength="8" maxlength="21" size="18"></p>
-                </div>
-
-                <p id="logar"><input id="enviar" type="submit"> <a id="esquecisenha" href="#">Esqueci a senha</a></p>
-
-                
-            </form>
+                    <!--campo da senha-->
+                    <div class="fundoform">
+                        <p id="senh"><label for="senha">Senha:</label> <input id="senha" type="password" required placeholder="senha" minlength="8" maxlength="21" size="18"></p>
+                    </div>
+                        <!--botão de enviar-->
+                    <p id="logar"><input id="enviar" type="submit"> <a id="esquecisenha" href="#">Esqueci a senha</a></p> 
+                </form>
         </section>
     </section>
 </body>

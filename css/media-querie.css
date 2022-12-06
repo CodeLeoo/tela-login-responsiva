@@ -7,18 +7,20 @@
         height: 100vh;
         width: 100vw;
         background-image: linear-gradient(to bottom, #710080, #f00094, rgb(223, 41, 41));
+        position: relative;
     }
     #container {
         display: flex;
-        height: 60vh;
+        min-height: 60vh;
         width: 75vw;
         box-shadow: 1px 1px 4px rgba(58, 0, 58, 0.726);
-        transform: translate(16%, 31%);
+        transform: translate(16%, 21%);
+        position: absolute;
     }
     /*imagem do login*/
     #img {
         background-image: url("../imagens/water-g14e7cb263_1280.jpg");
-        height: 60vh;
+        min-height: 70vh;
         width: 30vw;
         border-bottom-left-radius: 9px;
         border-top-left-radius: 9px;
@@ -44,6 +46,7 @@
         line-height: 1.3em;
         text-align: center;
         font-size: 19px;
+    }
 }
 
 /*pc e telas grandes*/
@@ -87,5 +90,6 @@
         line-height: 1.3em;
         text-align: center;
     }
+
 }
 
